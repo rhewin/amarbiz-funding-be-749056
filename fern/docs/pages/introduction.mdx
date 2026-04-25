@@ -1,0 +1,21 @@
+---
+title: Introduction
+---
+
+**SignalBit** is a backend API collection for a push notification and subscriber management platform. It covers the full lifecycle of the application — from authentication and user management to subscriber tracking, push notifications, and billing.
+
+## Folders & Coverage
+
+- **Login** — Authentication flows including login, registration, profile retrieval, permission checks, and token verification.
+- **User** — User profile and billing information endpoints.
+- **Subscriber** — Full subscriber management: listing, detail retrieval, activity tracking, tag management (add, edit, delete, list), external ID assignment, and subscriber counts/checks.
+- **Push** — Sending push notifications and checking push service availability.
+- **Verification** — Email verification via a send-email endpoint.
+- **Template** — Template availability check.
+- **Payment** — Payment method management including upsert and existence checks.
+- **z.Master Data** — Reference data for tags, browsers, devices, and operating systems.
+- **z.External** — External third-party integrations (e.g., country list from REST Countries API).
+
+## Variables
+
+This collection uses the `{{url_api}}` environment variable as the base URL and `{{token_login}}` for authentication, making it easy to switch between environments (e.g., `SB-LOC`, `SB-STG`).

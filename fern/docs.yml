@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
+
+instances:
+  - url: neopostman-signalbit.docs.buildwithfern.com
+    edit-this-page:
+      github:
+        owner: fern-starter
+        repo: amarbiz-funding-be-749056
+        branch: main
+      launch: dashboard
+ai-search:
+  location:
+    - docs
+ai-examples:
+  enabled: false
+title: Signalbit | Documentation
+layout:
+  searchbar-placement: header
+  page-width: full
+navigation:
+  - api: SignalBit
+    flattened: false
+    layout:
+      - page: Introduction
+        path: docs/pages/introduction.mdx
+colors:
+  accent-primary:
+    light: "#008700"
+    dark: "#008700"
+  background:
+    light: "#FFFFFF"
+    dark: "#111827"
+  border:
+    light: "#E5E7EB"
+    dark: "#374151"
+theme:
+  page-actions: toolbar
+  footer-nav: minimal
+logo:
+  dark: docs/assets/logo.svg
+  light: docs/assets/logo.svg
+  height: 20
+favicon: docs/assets/favicon.svg
